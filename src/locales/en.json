@@ -1,0 +1,11 @@
+{
+  "slideMenu":{
+    "home": "Home",
+    "search": "Search",
+    "liveTv": "LiveTv",
+    "catagories": "Catagories"
+  },
+  "account": {
+    "logout": "Logout"
+  }
+}

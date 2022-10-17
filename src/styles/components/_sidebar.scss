@@ -1,0 +1,84 @@
+.sidebar{
+    .sidebar-menu{
+        background-color: $black;
+        width: 300px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        padding:0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .3s ease;
+        overflow: hidden;
+        img{
+            display: block;
+            width: 200px;
+            height: auto;
+            position: absolute;
+            top: 50px;
+            left: 50%;
+            transform: translate(-50%);
+        }
+        ul{
+            list-style: none;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            li{
+                background: $black;
+                width: 100%;
+                margin: 20px 0;
+                a{
+                    text-decoration: none;
+                    color: white;
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    padding: 10px;
+                    svg{
+                        margin-right: 15px;
+                        font-size: 18px;
+                    }
+                }
+                a.router-link-exact-active{
+                    background-color: $red !important;
+                }
+            }
+        }
+        .sideBarBack{
+            position: absolute;
+            bottom: 20px;
+            right: 0px;
+            cursor: pointer;
+            transition: .3s ease;
+            width: 50px;
+            height:50px;
+            line-height:50px;
+            &:hover{
+                color: white;
+            }
+        }
+    }
+    .resizeSidebar{
+        img{
+            left: 10%;
+            transform: translate(0%);
+        }
+    }
+    .sidebar-300{
+        width: 300px !important;
+    }
+    .sidebar-100{
+        width: 50px !important;
+        .menu-text{
+            display: none;
+            transition: .3s ease;
+        }
+    }
+    .rotateBack{
+        transform: rotate(180deg);
+    }
+}
